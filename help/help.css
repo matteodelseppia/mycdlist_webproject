@@ -1,0 +1,9 @@
+#help_text {
+    font-family: Helvetica;
+    font-size: 15px;
+    color: black;
+    width: 300px;
+    height: max-content;
+    height: -moz-max-content;
+    margin-top: 30px;
+}

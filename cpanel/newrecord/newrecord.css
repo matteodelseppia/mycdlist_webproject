@@ -1,0 +1,26 @@
+#image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: max-content;
+}
+
+#submit_div {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.page_title h1 {
+	width: max-content;
+	margin: 0 auto;
+}
+
+#tracks {
+	resize: none;
+	box-shadow: none;
+	outline: none;
+	border: 1px solid lightgrey;
+	height: 70px;
+}

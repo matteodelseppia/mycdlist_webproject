@@ -1,0 +1,203 @@
+
+.site_nav_menu {
+	width: 100%;
+    height: 40px;
+    text-decoration: none;
+    position: relative;
+    text-align: right;
+    top: 20px;
+}
+
+.site_nav_menu nav {
+    padding: 20px 20px;
+    padding-right: 100px;
+}
+
+.search_query {
+	height: 23px;
+}
+
+.site_nav_menu a {
+	text-decoration: none;
+    color: black;
+    font-family: Helvetica;
+    font-size: 16px;
+    border-right: 1px solid grey;
+    padding: 0 10px;
+    text-transform: lowercase;
+}
+
+#stact, #new_releases_container {
+	min-width: 960px;
+    margin: 20px auto;
+    padding: 20px 20px;
+    position: relative;
+    height: 330px;
+	top: 30px;
+}
+
+#new_releases_container {
+	margin-top: 10px;
+}
+
+#stact {
+	display: block;
+	height: 300px;
+	margin-bottom: 0px;
+}
+
+#new_releases_container h1 {
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 20px;
+	width: 1080px;
+	margin: 0 100px;
+	position: relative;
+	top: 0px;
+	padding-left: 50px;
+	height: max-content;
+	height: -moz-max-content;
+	margin-bottom: 10px;
+}
+
+#stact_title {
+	padding-bottom: 10px;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0 150px;
+	width: 700px;
+	position: relative;
+	top: 0px;
+	
+	height: max-content;
+	height: -moz-max-content;
+	margin-bottom: 10px;
+}
+
+
+#activity {
+	display: block;
+	
+	margin: 0 100px;
+	border: 1px solid lightgrey;
+	border-top: 3px solid lightgrey;
+	height: 250px;
+	display: block;
+	position: relative;
+	overflow-y: scroll;
+	white-space: nowrap;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+
+}
+
+#new_releases {
+	margin: 0 100px;
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	position: relative;
+	top: 10px;
+	height: 270px;
+	overflow-x: scroll;
+	white-space: nowrap;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.album_container {
+	width: 250px !important;
+	height: 250px !important;
+	margin: 0 0;
+	position: relative;
+	top: 0px;
+	display: inline-block;
+	text-align: center;
+}
+
+.album_content {
+	margin: 0 auto;
+	width: 250px;
+	height: 250px;
+	vertical-align: top;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.album_content img {
+    max-height: 180px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.album_name {
+	text-decoration: none;
+	color: black;
+	font-family: Helvetica;
+	font-size: 15px;
+	position: relative;
+	margin: 5px auto;
+	top: 0px;
+	font-weight: bold;
+	display: block;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.album_artist {
+	text-decoration: none;
+	color: darkblue;
+	font-family: Helvetica;
+	font-size: 14px;
+	position: relative;
+	margin: 5px auto;
+	top: 0px;
+	font-weight: bold;
+	display: block;
+}
+
+.activity_content {
+	display: block;
+	width: auto;
+	height: max-content;
+	height: -moz-max-content;
+	border-bottom: 1px solid lightgrey;
+}
+
+.activity_content p {
+	margin: 10px 10px;
+	height: max-content;
+	height: -moz-max-content;
+	word-break: break-word;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+.empty {
+	margin: auto auto;
+    position: relative;
+	width: max-content;
+	width: -moz-max-content;
+    top: 60px;
+    font-family: Helvetica;
+    color: white;
+    font-size: 30px;
+}
+
+
+.search_results {
+	margin-top: 7px;
+}
+
+footer {
+	position: absolute;
+	min-width: 960px;
+	bottom: -100px;
+	width: -webkit-fill-available;
+}

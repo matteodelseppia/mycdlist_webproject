@@ -1,0 +1,55 @@
+<form action="" enctype="multipart/form-data" id="file-form" method="POST">
+  <div id="upup">
+    <h2>Upload update file</h2>
+    <p id="progressdiv"><progress max="100" value="0" id="progress" style="display: none;"></progress></p>
+    <input type="file" name="file-select"  id="file-select">
+    <button type="submit" id="upload-button">Upload</button>
+  </div>
+</form>
+<script type="text/javascript">
+  var form = document.getElementById('file-form');
+  var fileSelect = document.getElementById('file-select');
+  var uploadButton = document.getElementById('upload-button');
+
+  form.onsubmit = function(event) {
+    event.preventDefault();
+
+    var progress = document.getElementById('progress');
+    var progressdiv = document.getElementById('progressdiv');
+
+    progress.style.display = "block";
+    uploadButton.innerHTML = 'Uploading...';
+
+
+    var files = fileSelect.files;
+    var formData = new FormData();
+    var file = files[0];
+    formData.append('file-select', file, file.name);
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'archiveupload.php', true);
+    xhr.upload.onprogress = function (e) {
+      update_progress(e);
+    }
+    xhr.onload = function (e) {
+      if (xhr.status === 200) {
+        uploadButton.innerHTML = 'Upload';
+        progressdiv.innerHTML = "<h3>Sucess</h3>";
+      } else {
+        alert('An error occurred!');
+      }
+    };
+    xhr.send(formData);
+  }
+
+  function update_progress(e){
+      if (e.lengthComputable){
+          var percentage = Math.round((e.loaded/e.total)*100);
+          progress.value = percentage;
+          uploadButton.innerHTML = 'Upload '+percentage+'%';
+          console.log("percent " + percentage + '%' );
+      }
+      else{
+        console.log("Unable to compute progress information since the total size is unknown");
+      }
+  }
+</script>

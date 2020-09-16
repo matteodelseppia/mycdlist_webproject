@@ -1,0 +1,70 @@
+.page_wrapper {
+	position: absolute;
+	height: --webkit-fill-available;
+	height: 100%;
+	background-size: cover;
+	background-image: url('../images/background_1.jpg');
+}
+
+.main_wrapper {
+	background-color: black;
+	opacity: 1;
+}
+
+#p_subtitle {
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0 auto;
+	width: max-content;
+	width: -moz-max-content;
+}
+
+p {
+	font-family: Helvetica;
+	color: white;
+}
+
+
+
+#subtitle {
+	opacity: 1;
+	position: relative;
+	top: 200px;
+}
+
+.header_logo {
+	margin: 0 auto;
+}
+
+button {
+  background-color: black;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  font-family: Helvetica;
+  border-color: black;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  margin: 30px auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+#register_p {
+  width: max-content;
+  width: -moz-max-content;
+  margin: 0 auto;
+  display: block;
+  color: white;
+}
+
+#register_p a {
+	font-family: Helvetica;
+	font-style: normal;
+	padding-left: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
